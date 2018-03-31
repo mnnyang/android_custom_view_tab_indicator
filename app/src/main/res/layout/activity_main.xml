@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical">
+
+    <com.mnn.nnn.viewpagerzhidinyi.ViewPagerIndicator
+        android:id="@+id/indicator"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        app:tab_count="3"
+        android:background="@color/colorPrimary"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_sms"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="短信"
+            android:gravity="center_horizontal"
+            android:textColor="#ffffff"
+            android:textSize="19dp"/>
+        <TextView
+            android:id="@+id/tv_souchang"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="收藏"
+            android:gravity="center_horizontal"
+            android:textColor="#ffffff"
+            android:textSize="19dp"/>
+        <TextView
+            android:id="@+id/tv_set"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="设置"
+            android:gravity="center_horizontal"
+            android:textColor="#ffffff"
+            android:textSize="19dp"/>
+        <TextView
+            android:id="@+id/tv_sms2"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="短信2"
+            android:gravity="center_horizontal"
+            android:textColor="#ffffff"
+            android:textSize="19dp"/>
+        <TextView
+            android:id="@+id/tv_souchang2"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="收藏2"
+            android:gravity="center_horizontal"
+            android:textColor="#ffffff"
+            android:textSize="19dp"/>
+        <TextView
+            android:id="@+id/tv_set2"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="设置2"
+            android:gravity="center_horizontal"
+            android:textColor="#ffffff"
+            android:textSize="19dp"/>
+    </com.mnn.nnn.viewpagerzhidinyi.ViewPagerIndicator>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+</LinearLayout>
